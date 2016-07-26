@@ -1,5 +1,12 @@
 ﻿ID	GeneratedMagic
 atInvalid	
+atMaxLifeAdditional	氣血上限
+atLifeReplenishExt	氣血恢復
+atManaReplenishExt	內力恢復
+atParryBase	招架
+atParryValueBase	拆招
+atDodge	閃避
+atDecriticalDamagePowerBase	化勁
 atSpiritBase	根骨
 atAgilityBase	身法
 atSpunkBase	元氣
@@ -7,14 +14,7 @@ atStrengthBase	力道
 atVitalityBase	體質
 atStrainBase	無雙
 atToughnessBase	禦勁
-atDecriticalDamagePowerBase	化勁
-atDodge	閃避
 atHasteBase	加速
-atParryBase	招架
-atParryValueBase	拆招
-atMaxLifeAdditional	氣血上限
-atLifeReplenishExt	氣血恢復
-atManaReplenishExt	內力恢復
 atTherapyPowerBase	治療效果
 atMeleeWeaponDamageBase	武器傷害
 atMagicAttackPowerBase	內功攻擊

@@ -262,7 +262,7 @@ function AH_Tip.GetRecipeTip(player, item)
 								table.insert(t1, "<text>text=" .. EncodeComponentsString(GetItemNameByItemInfo(tItemInfo)) .. " font=162 " .. GetItemFontColorByQuality(tItemInfo.nQuality, true).."</text>")
 							end
 						end
-						szInner = szInner .. table.concat(t1, GetFormatText("£¬", 162))
+						szInner = szInner .. table.concat(t1, GetFormatText(",", 162))
 					end
 				end
 			end
@@ -290,7 +290,7 @@ function AH_Tip.GetRecipeTip(player, item)
 								table.insert(t2, "<text>text=" .. EncodeComponentsString(GetItemNameByItemInfo(tItemInfo)) .. " font=162 " .. GetItemFontColorByQuality(tItemInfo.nQuality, true).."</text>")
 							end
 						end
-						szInner = szInner .. table.concat(t2, GetFormatText("£¬", 162))
+						szInner = szInner .. table.concat(t2, GetFormatText(",", 162))
 					end
 				end
 			end

@@ -517,7 +517,7 @@ function AH_Retrieval.UpdateContent(frame)
 		nFont = 102
 	end
 	if bComma then
-		szText = szText .. GetFormatText("，", 162)
+		szText = szText .. GetFormatText(",", 162)
 	end
 	szText = szText .. GetFormatText(FormatString(g_tStrings.CRAFT_COST_STAMINA_BLANK, recipe.nStamina), nFont)
 
@@ -526,7 +526,7 @@ function AH_Retrieval.UpdateContent(frame)
 		local doodadTamplate = GetDoodadTemplate(recipe.dwRequireDoodadID)
 		if doodadTamplate then
 			local szName = Table_GetDoodadTemplateName(doodadTamplate.dwTemplateID)
-			szText = szText .. GetFormatText("，" .. szName, 162)
+			szText = szText .. GetFormatText("," .. szName, 162)
 		end
 	end
 	--技艺要求
@@ -540,7 +540,7 @@ function AH_Retrieval.UpdateContent(frame)
 	if recipe.dwRequireProfessionLevel > nLevel then
 		nFont = 102
 	end
-	szText = szText .. GetFormatText("，", 162) .. GetFormatText(szCraftText, nFont)
+	szText = szText .. GetFormatText(",", 162) .. GetFormatText(szCraftText, nFont)
 
 	--冷却时间
 	AH_Retrieval.bCoolDown = false
@@ -572,7 +572,7 @@ function AH_Retrieval.UpdateContent(frame)
 			nFont = 102
 			bSatisfy = false
 		end
-		szText = szText .. GetFormatText("，"..szTimeText, nFont)
+		szText = szText .. GetFormatText(","..szTimeText, nFont)
 	end
 
 	hWnd:Show()
@@ -1260,7 +1260,7 @@ end
 ------------------------------------------------------
 local tDiamondType = {"Normal", "Simplify"}
 
---数据筛选，用于菜单动态生成
+--数据筛选,用于菜单动态生成
 function AH_Retrieval.Attribute2Magic(szType, szAttribute)
 	for k, v in ipairs(AH_Library.tColorMagic[szType]) do
 		if szAttribute == v[1] then
